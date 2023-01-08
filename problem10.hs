@@ -7,4 +7,4 @@ primes :: [Int]
 primes = filter isPrime $ 2 : [3, 5..]
 
 ans = sum $ takeWhile (<2000000) primes 
-main = putStrLn $ show ans
+main = print ans
