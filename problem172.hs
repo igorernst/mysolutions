@@ -1,16 +1,4 @@
 
--- How many 18-digit numbers n (without leading zeros) are there such that no digit occurs more than three times in n?
-
--- first digit not zero
--- for the rest: choose 'em (sorted?)
--- multiply by transpositions
-
--- option 2:
--- count all - with leading zero
-
--- digits !! d = number of digit d in X, has to be no more than 3
--- sum digits = 18 
-
 l = 18
 
 digits = [0..3]
