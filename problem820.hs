@@ -8,8 +8,9 @@ powMod a p n = pm a p 1
             else if acc == 0 then 0 else pm a (p - 1) ((acc * a) `mod` n)
 
 g' l x = (powMod 10 l (10*x) `div` x ) `mod` 10
-naive'' l n = sum $ map (g' l) $ [1..n]
+naive'' l n = sum $ map (g' l) [1..n]
 
+ans :: Int -> Int
 ans x = naive'' x x
 
-main = putStrLn $ show $ ans (10^7)
+main = print $ ans (10^7)
